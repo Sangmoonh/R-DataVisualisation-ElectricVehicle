@@ -56,12 +56,11 @@ The dashboard consists of four main tabs:
 
 ```r
 shiny::runApp()
-
-The dashboard will open in a browser window.
+```
+ 5. The dashboard will open in a browser window.
 
 Note: Make sure the required R packages are installed (shiny, leaflet, highcharter, etc.).
-
-📋 Required R Packages
+## 📋 Required R Packages
 shiny
 
 leaflet
@@ -80,7 +79,5 @@ jsonlite
 
 Install all necessary packages with:
 
-r
-Copy
-Edit
+```r
 install.packages(c("shiny", "leaflet", "highcharter", "dplyr", "tidyr", "readr", "jsonlite"))
