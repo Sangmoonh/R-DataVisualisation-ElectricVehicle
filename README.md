@@ -50,9 +50,37 @@ The dashboard consists of four main tabs:
 ## 🛠️ How to Run the Shiny App
 
 1. Clone or download this repository.
-2. Ensure all files (especially the **Data/**) are present in the project root.
+2. Ensure all files (especially the **Data**) are present in the project root.(All files should be in the same directory with R file)
 3. Open `app.R` in RStudio.
 4. Run the app by clicking the "Run App" button or executing:
 
 ```r
 shiny::runApp()
+
+The dashboard will open in a browser window.
+
+Note: Make sure the required R packages are installed (shiny, leaflet, highcharter, etc.).
+
+📋 Required R Packages
+shiny
+
+leaflet
+
+highcharter
+
+dplyr
+
+tidyr
+
+readr
+
+jsonlite
+
+(others depending on your final script)
+
+Install all necessary packages with:
+
+r
+Copy
+Edit
+install.packages(c("shiny", "leaflet", "highcharter", "dplyr", "tidyr", "readr", "jsonlite"))
