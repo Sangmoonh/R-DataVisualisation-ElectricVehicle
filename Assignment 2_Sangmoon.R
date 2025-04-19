@@ -28,8 +28,8 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 ###### EV_registration
 # Read dataset
-ev_data <- read.csv("EV_registration.csv")
-ev_station <- read.csv("EV_station.csv", check.names = FALSE)
+ev_data <- read.csv("Data/EV_registration.csv")
+ev_station <- read.csv("Data/EV_station.csv", check.names = FALSE)
 
 #Changing state name with 2 characters
 state_abbr_map <- setNames(c(state.abb, "DC"), c(state.name, "District of Columbia"))
@@ -50,19 +50,19 @@ state_choiceVec <- c("All States", sort(unique(ev_data$State)))
 
 ###### EV_infrastructure
 # Read infrastructure data
-ev_infra_2019 <- read.csv("fuel_station(2019).csv")
-ev_infra_2020 <- read.csv("fuel_station(2020).csv")
-ev_infra_2021 <- read.csv("fuel_station(2021).csv")
-ev_infra_2022 <- read.csv("fuel_station(2022).csv")
-ev_infra_2023 <- read.csv("fuel_station(2023).csv")
+ev_infra_2019 <- read.csv("Data/fuel_station(2019).csv")
+ev_infra_2020 <- read.csv("Data/fuel_station(2020).csv")
+ev_infra_2021 <- read.csv("Data/fuel_station(2021).csv")
+ev_infra_2022 <- read.csv("Data/fuel_station(2022).csv")
+ev_infra_2023 <- read.csv("Data/fuel_station(2023).csv")
 
 # Read infrastructure data
 ev_infra <- read.csv("ev_infrastructure.csv")
 
 ###### EV_incentive. regulation
-ev_incentive <- read.csv("ev_incentives.csv")
-ev_regulation <- read.csv("ev_regulations.csv")
-ev_emission <- read.csv("ev_emissions.csv")
+ev_incentive <- read.csv("Data/ev_incentives.csv")
+ev_regulation <- read.csv("Data/ev_regulations.csv")
+ev_emission <- read.csv("Data/ev_emissions.csv")
 
 ##################
 # USER INTERFACE #
